@@ -1,0 +1,219 @@
+ @import url('https://fonts.googleapis.com/css2?family=Sono:wght@300;400;600;800&display=swap');
+
+ :root {
+   --color-black: #2d2d2b;
+   --color-brown: #9f9385;
+   --color-nude: #eae3d9;
+   --color-white: #f8f7f3;
+   --color-caramel: #b8926b;
+ }
+
+
+ body {
+   background-color: #d6dbde;
+   padding: 0;
+   margin: 0;
+   font-family: "Montserrat", sans-serif;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   min-height: 100vh;
+   width: 100%;
+   color: var(--color-white);
+ }
+
+ .communityList,
+ .container {
+   background-color: var(--color-black);
+   margin: auto;
+   border-radius: 15px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+ }
+
+ .communityList {
+   margin-top: 5em;
+  
+ }
+
+ .communityList-GRID{
+   display: grid;
+   grid-template-columns: repeat(2,auto);
+ }
+
+ .container {
+   width: 50%;
+   padding: 5em 2em;
+
+ }
+
+ .reg {
+   padding: 3em;
+   margin-top: 3em;
+ }
+
+ .communityList {
+   width: 80%;
+   padding: 2em 2em;
+   height: 90vh;
+   overflow: auto;
+ }
+
+ h2 {
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 2em;
+ }
+
+ .callBox {
+   display: flex;
+   gap: 1.5em;
+   justify-content: center;
+ }
+
+ .call {
+   text-transform: uppercase;
+   text-decoration: none;
+   color: var(--color-white);
+   border: 2px solid var(--color-caramel);
+   padding: .5em;
+   border-radius: 10px;
+ }
+
+ .call:hover {
+   background-color: var(--color-caramel);
+   color: var(--color-black);
+ }
+
+ .btn {
+   background-color: var(--color-caramel);
+   text-align: center;
+   cursor: pointer;
+   border-radius: 10px;
+   width: 120px;
+   font-weight: bold;
+   border: none;
+   padding: 10px 15px;
+   font-size: 1.3em;
+   color: var(--color-black);
+   transition: transform 0.3s;
+   margin: 1em auto;
+   display: block;
+ }
+
+ .btn:hover {
+   background-color: #0f730c;
+   color: #fff;
+   transform: scale(1.1);
+ }
+
+ #linkLogin {
+   font-size: 1.3em;
+   color: var(--color-caramel);
+   cursor: pointer;
+   text-decoration: none;
+   letter-spacing: 2px;
+ }
+
+ #linkLogin:hover {
+   transform: scale(1.5);
+   color: white;
+ }
+
+ .cardUser {
+   border: 1px solid var(--color-white);
+   padding: 1em;
+   border-radius: 15px;
+   margin: .5em;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .foto{
+  font-size: 6em;
+  margin-top: .2em;
+  color: var(--color-brown);
+ }
+
+ .infouser {
+   font-size: 1em;
+   text-transform: uppercase;
+   color: var(--color-nude);
+ }
+
+ .qnt {
+   font-size: 5em;
+   text-align: center;
+   color: var(--color-caramel);
+   font-weight: bold;
+ }
+
+ .center {
+   text-align: center;
+ }
+
+ .navbar {
+   background-color: var(--color-black);
+   display: flex;
+   color: var(--color-white);
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   font-size: 1.3em;
+ }
+
+ .links_list {
+   display: flex;
+   list-style: none;
+ }
+
+ .logo {
+   margin-left: 6em;
+   color: var(--color-white);
+   text-transform: uppercase;
+   text-decoration: none;
+   font-weight: bold;
+ }
+
+ .links_list a {
+   padding: .4em 1em;
+   color: var(--color-white);
+   text-decoration: none;
+   margin-right: 2em;
+ }
+
+ .active {
+   background-color: var(--color-caramel);
+ }
+
+ .att {
+   background-color: rgb(97, 4, 4);
+ }
+
+ .role-container {
+   display: flex;
+   gap: 2em;
+ }
+
+ .role-container input {
+  width: 100px;
+
+ }
+
+ .role-container input:disabled {
+   background-color: rgba(255, 255, 255, 0.307);
+   border: 1px solid var(--color-black);
+ }
+
+ .role-container input {
+  background-color: rgba(225, 225, 225, 0.968);
+  border: 1px solid var(--color-black);
+}
+
+ select {
+  background-color: var(--color-brown);
+  padding: .5em 1em;
+  cursor: pointer;
+ }
